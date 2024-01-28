@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Quiz!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Roboto+Slab:wght@400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+    <h1>Retro Gaming Quiz!</h1>
+    <h3>How many do you know?</h3>
+        <div class="question">
+            <h1 id="question-text"></h1>
+        </div>
+        <div class="game-details-container">
+            <h1>Score : <span id="player-score"></span> / 10</h1>
+            <h1> Question : <span id="question-number"></span> / 10</h1>
+        </div>
+    <div class="choices">
+    <button onclick="checkans(0)"  id="choice"> A: </button>
+    <button onclick="checkans(1)"  id="choice"> B: </button>
+    <button onclick="checkans(2)"  id="choice"> C: </button>
+    <button onclick="checkans(3)"  id="choice"> D: </button>
+    </div>
+</main>
+<script src="assets/javascript/script.js"></script>
+</body>
+</html>
