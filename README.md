@@ -1,39 +1,9 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Milestone Project 2 - Retro Videogame Quiz
 
-Welcome,
+## About
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+My second milestone project is focused on gaming just like my first project but this time it is in the form of an interactive quiz which takes full advantage of HTML, CSS and Javascript to create an entertaining and well designed environment for gamers to test their knowledge against a series of seven questions from a pool of 21 so this means that the player has a good chance that they will be able to play the quiz multiple times without facing the same questions. The questions are displayed above four multiple choice answers, each having the requisite answer contained within the button and each question follows the theme of retro gaming.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Aesthetics
 
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+The user will first be introduced to the quiz by a "Splash Screen" which will require the user to press a button to enter the quiz, this splash screen will be simplistic but effective and will just a coloured screen featuring a logo for the site and a button below said logo, once the start button is pressed a Javascript script will initalise and transform the screen to the quiz where the player will be greeted with a simple set up of a container that holds the quiz question, data below it that records how many correct or incorrect answers the player has made as well as a question counter and will be followed by four multiple choice answers below the player data. The background colour of the website is Black and the fonts used are Orbitron for the headings and questions and Roboto for the answers. 
