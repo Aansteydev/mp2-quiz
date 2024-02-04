@@ -15,4 +15,24 @@ I have also created a logo for the splash screen which will aid the user with re
 ## User Stories
 
 - As a user I will like to be able to ascertain what the site is about from just an initial glance.
-- This will be acheived by the use of a splash screen and logo as the logo featured above is at least to me obvious that this is a gaming related site.
+- This will be acheived by the use of a splash screen and logo as the logo featured above is at least to me obvious that this is a gaming related site which features a quiz.
+
+- As a user I would like to be able to see my highscores in relation to other peoples scores.
+- A leaderboard may be implemented someday but that will require backend integration and more time to work on this feature than I currently have spare.
+
+- As a user I would not like to see the same questions repeated too often.
+- This has been acheieved by writing twenty one questions and only using seven of the questions per game which are picked at random, unfortunately due to the limited amount of questions there will eventually be a repeated question but by theory you should be able to play the game at least three times without a single repeat(21/3=7).
+
+- As a user I would like the functionality of the site to be easy to navigate I.E how to access the answers, where to check my score etc.
+- This will be implemented by using clearly labelled buttons for the answers that will change colour upon the user hovering or clicking on them to provide feedback to the user, the site also tracks the users score I.E correct and incorrect answers and this is large enough and labelled so that this information is apparent to the user.
+
+- As a user I would like to be able to ...
+- This will be....
+
+- As a user I would like to be able to ...
+- This will be ....
+
+# Testing 
+Due to this project being quite small in scope I have neglected automated testing and have focused on creating functionality through my code, so whilst there is a lack of automated testing I have been working through my code as the project has expanded and my findings are as follows. 
+
+
