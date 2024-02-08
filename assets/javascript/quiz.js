@@ -6,7 +6,7 @@ const questions = [
     },
 
     {
-        question: "How many games are in the original Megaman series?",
+        question: "How many games are there in the original Megaman series?",
         choices: ["12", "11", "10", "9"],
         correct: 1
     },
@@ -111,7 +111,18 @@ const questions = [
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+function handleQuestions() {
+    //function to shuffle and push 7 questions to shuffledQuestions array
+    while (shuffledQuestions.length <= 6) {
+        const random = questions[Math.floor(Math.random() * questions.length)];
+        if (!shuffledQuestions.includes(random)) {
+            shuffledQuestions.push(random);
+        }
+    }
+}
+
 function showQuestion() {
+    // function to display question text
     const questionText = document.getElementById("question-text");
     questionText.textContent = questions[currentQuestion].question;
 
@@ -124,25 +135,16 @@ function showQuestion() {
     feedback.textContent = "";
 }
 
-function checkAnswer(selected) {
-    const feedback = document.getElementById("feedback");
-    if (selected === questions[currentQuestion].correct) {
-        feedback.textContent = "Correct!";
-        correctAnswers++;
-    } else {
-        feedback.textContent = "Incorrect!";
-    }
-
-    setTimeout(() => {
-        currentQuestion++;
-
-        if (currentQuestion < questions.length) {
-            showQuestion();
-        } else {
-            const quizContainer = document.querySelector(".quiz-container");
-            quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions.</p>`;
+function checkAnswer(choices) {
+    // function to check answer and 
+    const currentQuestion = shuffledQuestions[indexNumber];
+    const currentQuestionCorrect = currentQuestion.correct;
+    const choices = document.getElementsByName("choices");
+    let correctChoice = null;
+    choices.forEach((choice) => {
+        if (choice.value === currentQuestionCorrect) {
+            currentChoice = choices.array[0].index;
         }
-    }, 2000);
+    });
 }
 
-showQuestion();

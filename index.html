@@ -16,20 +16,24 @@
     <div class="quiz-container">
     <h1>Retro Gaming Quiz!</h1>
     <h3>How many do you know?</h3>
-        <div class="question">
-            <h1 id="question-text"></h1>
+        <div class="game-question-container">
+            <h1 id="display-question">How many games are there in the original Megaman series? </h1>
         </div>
         <div class="game-details-container">
-            <h1>Score : <span id="player-score"></span> / 10</h1>
-            <h1> Question : <span id="question-number"></span> / 10</h1>
+            <h1> Correct : <span id="player-score"></span> / 7</h1>
+            <h1> Incorrect : <span id="incorrect-score"></span> / 7</h1>
+            <h1> Question : <span id="question-number"></span> / 7</h1>
         </div>
     <div class="choices">
-    <button onclick="checkans(0)"  id="choice"> A: </button>
-    <button onclick="checkans(1)"  id="choice"> B: </button>
-    <button onclick="checkans(2)"  id="choice"> C: </button>
-    <button onclick="checkans(3)"  id="choice"> D: </button>
+    <button class="choice" onclick="checkAnswer(0)"  > A: 12 </button>
+    <button class="choice" onclick="checkAnswer(1)"  > B: 11 </button>
+    <button class="choice" onclick="checkAnswer(2)"  > C: 9 </button>
+    <button class="choice" onclick="checkAnswer(3)"  > D: 8 </button>
+    </div>
+    <div>
+    <p id="feedback"></p>
     </div>
 </main>
-<script src="assets/javascript/script.js"></script>
+<script src="javascript/quiz.js"></script>
 </body>
 </html>
