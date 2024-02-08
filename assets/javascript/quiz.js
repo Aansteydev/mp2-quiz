@@ -108,10 +108,14 @@ const questions = [
 
 ];
 
-let currentQuestion = 0;
+let questionNumber = 0;
 let correctAnswers = 0;
+let incorrectAnswers = 0;
+let shuffledQuestions = [];
+
 
 function handleQuestions() {
+    console.log("here");
     //function to shuffle and push 7 questions to shuffledQuestions array
     while (shuffledQuestions.length <= 6) {
         const random = questions[Math.floor(Math.random() * questions.length)];
@@ -124,27 +128,53 @@ function handleQuestions() {
 function showQuestion() {
     // function to display question text
     const questionText = document.getElementById("question-text");
-    questionText.textContent = questions[currentQuestion].question;
+    questionText.textContent = shuffledQuestions[questionNumber].question;
 
     const choices = document.querySelectorAll(".choice");
     choices.forEach((choice, index) => {
-        choice.textContent = questions[currentQuestion].choices[index];
+        choice.textContent = shuffledQuestions[questionNumber].choices[index];
     });
 
     const feedback = document.getElementById("feedback");
     feedback.textContent = "";
 }
 
-function checkAnswer(choices) {
-    // function to check answer and 
-    const currentQuestion = shuffledQuestions[indexNumber];
+
+// everything below here 
+function nextQuestion(choice) {
+    setTimeout(() => {
+        questionNumber++;
+    }, 2000);
+    document.getElementById("choice" + choice).style.backgroundColor = "rgb(93, 93, 220)";
+    //Change the question text
+    // change the button text 
+    // change the three scores 
+}
+// work on this first, complete the function
+function changeQuestionText() {
+    const nextQuestion = shuffledQuestions.textContent[questionNumber];
+    console.log(nextQuestion);
+     
+
+}
+// stay here! you can do this Alex, think about what you are trying to acheive. 
+
+function checkAnswer(choice) {
+    // function to check answer and use onclick function
+    const currentQuestion = shuffledQuestions[questionNumber];
+    console.log(currentQuestion);
     const currentQuestionCorrect = currentQuestion.correct;
-    const choices = document.getElementsByName("choices");
-    let correctChoice = null;
-    choices.forEach((choice) => {
-        if (choice.value === currentQuestionCorrect) {
-            currentChoice = choices.array[0].index;
-        }
-    });
+    const outcome = choice == currentQuestionCorrect;
+    if (outcome) {
+        document.getElementById("choice" + choice).style.backgroundColor = "green";
+        correctAnswers++;
+    } else {
+        incorrectAnswers++;
+        document.getElementById("choice" + choice).style.backgroundColor = "red";
+    }
+    nextQuestion(choice);
 }
 
+document.addEventListener("DOMContentLoaded", function (event) {
+    handleQuestions();
+});
