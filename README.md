@@ -49,7 +49,13 @@ The fonts used are Roboto for the answers and orbitron for the question and head
 # Testing 
 Due to this project being quite small in scope I have neglected automated testing and have focused on creating functionality through my code, so whilst there is a lack of automated testing I have been working through my code as the project has expanded and my findings are as follows. 
 
-Error message -
+Error message - quiz.js:167 Uncaught TypeError: Cannot read properties of null (reading 'style')
+    at checkAnswer (quiz.js:167:51)
+    at HTMLButtonElement.onclick ((index):28:68)
+
+    This is an error that explains that when a question is answered the corresponding negative or positive reinforcement in the form of displaying red for incorrect or green for correct is not displaying.( So far this seems to only throw an error when the first button element is pressed which is an incorrect answer but so are two of the remaining three buttons that don't give this error message)
+
+    Fix - 
 
 Error message -
 
