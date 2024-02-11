@@ -2,11 +2,11 @@
 
 ## About
 
-My second milestone project is focused on gaming just like my first project but this time it is in the form of an interactive quiz which takes full advantage of HTML, CSS and Javascript to create an entertaining and well designed environment for gamers to test their knowledge against a series of seven questions from a pool of 21 so this means that the player has a good chance that they will be able to play the quiz multiple times without facing the same questions. The questions are displayed above four multiple choice answers, each having the requisite answer contained within the button and each question follows the theme of retro gaming.
+My second milestone project is focused on gaming just like my first project but this time it is in the form of an interactive quiz which takes full advantage of HTML, CSS and Javascript to create an entertaining and well designed environment for gamers to test their knowledge against a series of seven questions from a pool of twenty-one available questions which means that the player has a good chance that they will be able to play the quiz multiple times without answering the same questions multiple times I have implemented a javascript script to ensure that the questions are drawn and displayed at random. The questions are displayed above four multiple choice answers, each having the requisite answer contained within one of four possible options. The buttons are updated with each new answer so that they will display the correct array of multiple choices available, once the user has clicked a button to answer the current question being asked they will be greeted by a visual representation to display whether they have answered correctly(Green) or incorrectly(Red) then the players score will be updated. 
 
 ## Aesthetics
 
-The user will first be introduced to the quiz by a "Splash Screen" which will require the user to press a button to enter the quiz, this splash screen will be simplistic but effective and will be just a coloured screen(rgb 93, 93, 220) featuring a logo for the site and a button below said logo, once the start button is pressed a Javascript script will initalise and transform the screen to the quiz where the player will be greeted with a simple set up of a container that holds the quiz question, data below it that records how many correct or incorrect answers the player has made as well as a question counter and will be followed by four multiple choice answers below the player data. The colours used are as follows:
+The user will first be introduced to the quiz by a "Splash Screen" which will require the user to press a button to enter the quiz, this splash screen will be simplistic but effective and will be just a coloured screen(rgb 93, 93, 220 - Dark Lavender see below for example) featuring a logo for the site and a button below said logo, once the start button is pressed a Javascript script will initalise and transform the screen to the quiz where the player will be greeted with a simple set up of a container that holds the quiz question, data below it that records how many correct or incorrect answers the player has made as well as a question counter and will be followed by four multiple choice answers below the player data. The colours used are as follows:
 
 I am hoping to be able to add images as backgrounds to the questions that change with each question to display a relevant image to the question being asked, I will enable this function by linking images to the correct array within the the questions array. I will need twenty one images for each question and none of the questions re-use the same question material so they will all need to be different, I will use tinyJPG to minimize the size of the images and the length of time it will take to load on the page. 
 I have also created a logo for the splash screen which will aid the user with recognising the ethos of the website from a glance.
@@ -26,9 +26,11 @@ The fonts used are Roboto for the answers and orbitron for the question and head
 
 ## Roboto font example - ![mp2roboto](https://github.com/Aansteydev/mp2-quiz/assets/137046660/517a71ed-8fc3-4747-b1cd-3338be3ae92c)
 
+I feel that the black background combined with the colour choices compliment each other nicely to create a retro effect whilst the font style choices, especially with the Orbitron font being used for headings and the question display iterate upon the retro stylings which is important for the feel of the site since all of the questions are based around retro gaming.  
+
 ## User Stories
 
-- As a user I will like to be able to ascertain what the site is about from just an initial glance.
+- As a user I would like to be able to ascertain what the site is about from just an initial glance.
 - This will be acheived by the use of a splash screen and logo as the logo featured above is at least to me obvious that this is a gaming related site which features a quiz.
 
 - As a user I would like to be able to see my highscores in relation to other peoples scores.
@@ -40,11 +42,7 @@ The fonts used are Roboto for the answers and orbitron for the question and head
 - As a user I would like the functionality of the site to be easy to navigate I.E how to access the answers, where to check my score etc.
 - This will be implemented by using clearly labelled buttons for the answers that will change colour upon the user hovering or clicking on them to provide feedback to the user, the site also tracks the users score I.E correct and incorrect answers and this is large enough and labelled so that this information is apparent to the user.
 
-- As a user I would like to easily be able to access 
-- This will be....
 
-- As a user I would like to be able to ...
-- This will be ....
 
 # Testing 
 Due to this project being quite small in scope I have neglected automated testing and have focused on creating functionality through my code, so whilst there is a lack of automated testing I have been working through my code as the project has expanded and my findings are as follows. 
