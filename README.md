@@ -55,6 +55,17 @@ Error message - quiz.js:167 Uncaught TypeError: Cannot read properties of null (
 
     Fix - 
 
-Error message -
+Error message(s) - buttons are not functioning as desired as checkAnswer is not defined 
+(index):28 Uncaught ReferenceError: checkAnswer is not defined
+    at HTMLButtonElement.onclick ((index):28:68)
+(index):29 Uncaught ReferenceError: checkAnswer is not defined
+    at HTMLButtonElement.onclick ((index):29:67)
+(index):30 Uncaught ReferenceError: checkAnswer is not defined
+    at HTMLButtonElement.onclick ((index):30:67)
+onclick @ (index):30
+(index):31 Uncaught ReferenceError: checkAnswer is not defined
+    at HTMLButtonElement.onclick ((index):31:67)
+onclick @ (index):31
+
 
 Error message -
