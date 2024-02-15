@@ -67,5 +67,5 @@ onclick @ (index):30
     at HTMLButtonElement.onclick ((index):31:67)
 onclick @ (index):31
 
-
+- Fix - This error message has been remedied by defining checkAnswer 
 Error message -
